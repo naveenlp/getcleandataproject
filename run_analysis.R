@@ -37,3 +37,4 @@
 
     # Extract tidy data by calculating means grouped by last 3 columns
     tidyData <- aggregate( cleanData[,1:66], cleanData[,67:69], FUN = mean )
+    tidyData <- tidyData[order(tidyData$subject,tidyData$activity),]
