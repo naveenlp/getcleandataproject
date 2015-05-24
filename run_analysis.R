@@ -5,13 +5,25 @@ run_analysis <- function() {
     # Get only mean and std columns along with subject and activity
     cleanData <- combinedData[,grep("mean\\(\\)|std\\(\\)|subject|activity", names(combinedData))]
 
-    # Read activities data
+    # Update activity description
     activitiesList <- read.table("./UCI HAR Dataset/activity_labels.txt", header = FALSE)$V2
     activityDesc <- data.frame(sapply(cleanData$activity, function(x) {activitiesList[x]}))
     colnames(activityDesc) = "activityDescription"
     cleanData <- cbind(cleanData, activityDesc)
 
-    cleanData
+    # Add descriptive names
+    names(cleanData)<-gsub("^t", "time", names(cleanData))
+    names(cleanData)<-gsub("^f", "frequency", names(cleanData))
+    names(cleanData)<-gsub("Acc", "Accelerometer", names(cleanData))
+    names(cleanData)<-gsub("Gyro", "Gyroscope", names(cleanData))
+    names(cleanData)<-gsub("Mag", "Magnitude", names(cleanData))
+    names(cleanData)<-gsub("-mean\\(\\)","Mean", names(cleanData))
+    names(cleanData)<-gsub("-std\\(\\)","StandardDeviation", names(cleanData))
+
+    # Extract tidy data by calculating means grouped by last 3 columns
+    tidyData <- aggregate( cleanData[,1:66], cleanData[,67:69], FUN = mean )
+
+    tidyData
 }
 
 get_merged_data <- function() {
@@ -25,8 +37,12 @@ get_merged_data <- function() {
 
     combined <- rbind(trainX, testX)
     colnames(combined) <- read.table("./UCI HAR Dataset/features.txt")[[2]]
-    combined$subject <- rbind(trainSubject, testSubject)
-    combined$activity <- rbind(trainY, testY)
+    subject <- rbind(trainSubject, testSubject)
+    colnames(subject) = "subject"
+    combined <- cbind(combined, subject)
+    act <- rbind(trainY, testY)
+    colnames(act) = "activity"
+    combined <- cbind(combined, act)
 
     combined
 }
