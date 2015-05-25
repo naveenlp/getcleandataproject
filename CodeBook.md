@@ -1,3 +1,6 @@
+Variables in Output Data
+=================
+
 #####subject
 Ranges from 1-30. Each number represents a person within an age bracket of 19-48 years who has volunteered to participate in an experiment to measure accelerometer and gyroscope sensor data while performing different activities                                           
 #####activity
