@@ -38,31 +38,44 @@ timeBodyGyroscopeStandardDeviation-Z
 timeBodyGyroscopeJerkMean-X                                 
 timeBodyGyroscopeJerkMean-Y
 timeBodyGyroscopeJerkMean-Z                                 
-timeBodyGyroscopeJerkStandardDeviation-X                     timeBodyGyroscopeJerkStandardDeviation-Y                    
-timeBodyGyroscopeJerkStandardDeviation-Z                     timeBodyAccelerometerMagnitudeMean                          
-timeBodyAccelerometerMagnitudeStandardDeviation              timeGravityAccelerometerMagnitudeMean                       
-timeGravityAccelerometerMagnitudeStandardDeviation           timeBodyAccelerometerJerkMagnitudeMean                      
-timeBodyAccelerometerJerkMagnitudeStandardDeviation          timeBodyGyroscopeMagnitudeMean                              
-timeBodyGyroscopeMagnitudeStandardDeviation                  timeBodyGyroscopeJerkMagnitudeMean                          
+timeBodyGyroscopeJerkStandardDeviation-X
+timeBodyGyroscopeJerkStandardDeviation-Y                    
+timeBodyGyroscopeJerkStandardDeviation-Z
+timeBodyAccelerometerMagnitudeMean                          
+timeBodyAccelerometerMagnitudeStandardDeviation
+timeGravityAccelerometerMagnitudeMean                       
+timeGravityAccelerometerMagnitudeStandardDeviation
+timeBodyAccelerometerJerkMagnitudeMean                      
+timeBodyAccelerometerJerkMagnitudeStandardDeviation
+timeBodyGyroscopeMagnitudeMean                              
+timeBodyGyroscopeMagnitudeStandardDeviation
+timeBodyGyroscopeJerkMagnitudeMean                          
 timeBodyGyroscopeJerkMagnitudeStandardDeviation              
 frequencyBodyAccelerometerMean-X                            
 frequencyBodyAccelerometerMean-Y                             
 frequencyBodyAccelerometerMean-Z                            
-frequencyBodyAccelerometerStandardDeviation-X                frequencyBodyAccelerometerStandardDeviation-Y               
+frequencyBodyAccelerometerStandardDeviation-X
+frequencyBodyAccelerometerStandardDeviation-Y               
 frequencyBodyAccelerometerStandardDeviation-Z                
 frequencyBodyAccelerometerJerkMean-X                        
 frequencyBodyAccelerometerJerkMean-Y                         
 frequencyBodyAccelerometerJerkMean-Z                        
-frequencyBodyAccelerometerJerkStandardDeviation-X            frequencyBodyAccelerometerJerkStandardDeviation-Y           
+frequencyBodyAccelerometerJerkStandardDeviation-X 
+frequencyBodyAccelerometerJerkStandardDeviation-Y           
 frequencyBodyAccelerometerJerkStandardDeviation-Z            
 frequencyBodyGyroscopeMean-X                                
 frequencyBodyGyroscopeMean-Y                                 
 frequencyBodyGyroscopeMean-Z                                
-frequencyBodyGyroscopeStandardDeviation-X                    frequencyBodyGyroscopeStandardDeviation-Y                   
-frequencyBodyGyroscopeStandardDeviation-Z                    frequencyBodyAccelerometerMagnitudeMean                     
-frequencyBodyAccelerometerMagnitudeStandardDeviation         frequencyBodyBodyAccelerometerJerkMagnitudeMean             
-frequencyBodyBodyAccelerometerJerkMagnitudeStandardDeviation frequencyBodyBodyGyroscopeMagnitudeMean                     
-frequencyBodyBodyGyroscopeMagnitudeStandardDeviation         frequencyBodyBodyGyroscopeJerkMagnitudeMean                 
+frequencyBodyGyroscopeStandardDeviation-X                    
+frequencyBodyGyroscopeStandardDeviation-Y                   
+frequencyBodyGyroscopeStandardDeviation-Z                    
+frequencyBodyAccelerometerMagnitudeMean                     
+frequencyBodyAccelerometerMagnitudeStandardDeviation         
+frequencyBodyBodyAccelerometerJerkMagnitudeMean             
+frequencyBodyBodyAccelerometerJerkMagnitudeStandardDeviation 
+frequencyBodyBodyGyroscopeMagnitudeMean                     
+frequencyBodyBodyGyroscopeMagnitudeStandardDeviation         
+frequencyBodyBodyGyroscopeJerkMagnitudeMean                 
 frequencyBodyBodyGyroscopeJerkMagnitudeStandardDeviation
 
 Feature Selection 
