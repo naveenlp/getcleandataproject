@@ -32,3 +32,14 @@ We use aggregate method to calculate the means for the various measurements grou
     tidyData <- aggregate( cleanData[,1:66], cleanData[,67:69], FUN = mean )
     tidyData <- tidyData[order(tidyData$subject,tidyData$activity),]
 ```
+# Output
+The output is stored in the data frames:
+1. cleanData - which contains the merged data with descriptive column names and activityDescription along with various measurements
+2. tidyData - which contains the grouped measurement means for subject and activity
+The output can be extracted to text files via:
+
+```
+write.table(cleanData, row.name = FALSE, file = "cleandata.txt")
+write.table(tidyData, row.name = FALSE, file = "tidydata.txt")
+
+```
